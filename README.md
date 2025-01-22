@@ -13,7 +13,11 @@
 <p>2. Use the following codes as per instructions</p>
 
 ```
-parted /dev/data
+mkdir /tmp/tools
+mount /dev/block/sda19 /tmp/tools/
+chmod +x /tmp/tools/kali.sh
+/tmp/tools/kali.sh
+cp /tmp/tools/kali.sh /data/
 ```
 
 <p>3. Follow the steps demonstrated in the Video after executing above mentioned codes</p>
