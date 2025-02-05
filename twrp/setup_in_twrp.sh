@@ -5,7 +5,7 @@ chmod +x mkfs.ext4
 echo "--------- Done ----------"
 echo "Setting up Storage============="
 echo "1> Resizing Current userdata partition (End: 45.0GB)"
-./parted/dev/block/sda "resizepart 17 45.0GB"
+./parted /dev/block/sda "resizepart 17 45.0GB"
 echo "--------- Done ----------"
 sleep 0.5
 echo "2> Creating Partition for Kali Nethunter (End: 59.7GB)"
